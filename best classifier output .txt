@@ -1,0 +1,204 @@
+﻿Unnamed: 0  Unnamed: 0.1 loan_status  Principal  terms effective_date  \
+0           0             0     PAIDOFF       1000     30       9/8/2016   
+1           2             2     PAIDOFF       1000     30       9/8/2016   
+2           3             3     PAIDOFF       1000     15       9/8/2016   
+3           4             4     PAIDOFF       1000     30       9/9/2016   
+4           6             6     PAIDOFF       1000     30       9/9/2016   
+    due_date  age             education  Gender  
+0  10/7/2016   45  High School or Below    male  
+1  10/7/2016   33              Bechalor  female  
+2  9/22/2016   27               college    male  
+3  10/8/2016   28               college  female  
+4  10/8/2016   29               college    male  
+(346, 10)
+   Unnamed: 0  Unnamed: 0.1 loan_status  Principal  terms effective_date  \
+0           0             0     PAIDOFF       1000     30     2016-09-08   
+1           2             2     PAIDOFF       1000     30     2016-09-08   
+2           3             3     PAIDOFF       1000     15     2016-09-08   
+3           4             4     PAIDOFF       1000     30     2016-09-09   
+4           6             6     PAIDOFF       1000     30     2016-09-09   
+    due_date  age             education  Gender  
+0 2016-10-07   45  High School or Below    male  
+1 2016-10-07   33              Bechalor  female  
+2 2016-09-22   27               college    male  
+3 2016-10-08   28               college  female  
+4 2016-10-08   29               college    male  
+PAIDOFF       260
+COLLECTION     86
+Name: loan_status, dtype: int64
+6    166
+0     87
+2     31
+5     31
+1     20
+4      8
+3      3
+Name: dayofweek, dtype: int64
+   Unnamed: 0  Unnamed: 0.1 loan_status  Principal  terms effective_date  \
+0           0             0     PAIDOFF       1000     30     2016-09-08   
+1           2             2     PAIDOFF       1000     30     2016-09-08   
+2           3             3     PAIDOFF       1000     15     2016-09-08   
+3           4             4     PAIDOFF       1000     30     2016-09-09   
+4           6             6     PAIDOFF       1000     30     2016-09-09   
+    due_date  age             education  Gender  dayofweek  weekend  
+0 2016-10-07   45  High School or Below    male          3        0  
+1 2016-10-07   33              Bechalor  female          3        0  
+2 2016-09-22   27               college    male          3        0  
+3 2016-10-08   28               college  female          4        1  
+4 2016-10-08   29               college    male          4        1  
+Gender  loan_status
+female  PAIDOFF        0.865385
+        COLLECTION     0.134615
+male    PAIDOFF        0.731293
+        COLLECTION     0.268707
+Name: loan_status, dtype: float64
+   Principal  terms  age  Gender  weekend
+0       1000     30   45       0        0
+1       1000     30   33       1        0
+2       1000     15   27       0        0
+3       1000     30   28       1        1
+4       1000     30   29       0        1
+   Principal  terms  age  Gender  weekend  Bechalor  High School or Below  \
+0       1000     30   45       0        0         0                     1   
+1       1000     30   33       1        0         1                     0   
+2       1000     15   27       0        0         0                     0   
+3       1000     30   28       1        1         0                     0   
+4       1000     30   29       0        1         0                     0   
+   college  
+0        0  
+1        0  
+2        1  
+3        1  
+4        1  
+[[ 0.51578458  0.92071769  2.33152555 -0.42056004 -1.20577805 -0.38170062
+   1.13639374 -0.86968108]
+ [ 0.51578458  0.92071769  0.34170148  2.37778177 -1.20577805  2.61985426
+  -0.87997669 -0.86968108]
+ [ 0.51578458 -0.95911111 -0.65321055 -0.42056004 -1.20577805 -0.38170062
+  -0.87997669  1.14984679]
+ [ 0.51578458  0.92071769 -0.48739188  2.37778177  0.82934003 -0.38170062
+  -0.87997669  1.14984679]
+ [ 0.51578458  0.92071769 -0.3215732  -0.42056004  0.82934003 -0.38170062
+  -0.87997669  1.14984679]]
+['PAIDOFF' 'PAIDOFF' 'PAIDOFF' 'PAIDOFF' 'PAIDOFF']
+   Unnamed: 0  Unnamed: 0.1 loan_status  Principal  terms effective_date  \
+0           1             1     PAIDOFF       1000     30       9/8/2016   
+1           5             5     PAIDOFF        300      7       9/9/2016   
+2          21            21     PAIDOFF       1000     30      9/10/2016   
+3          24            24     PAIDOFF       1000     30      9/10/2016   
+4          35            35     PAIDOFF        800     15      9/11/2016   
+    due_date  age             education  Gender  
+0  10/7/2016   50              Bechalor  female  
+1  9/15/2016   35       Master or Above    male  
+2  10/9/2016   43  High School or Below  female  
+3  10/9/2016   26               college    male  
+4  9/25/2016   29              Bechalor    male  
+   Principal  terms  age  Gender  weekend  Bechalor  High School or Below  \
+0       1000     30   50       1        0         1                     0   
+1        300      7   35       0        1         0                     0   
+2       1000     30   43       1        1         0                     1   
+3       1000     30   26       0        1         0                     0   
+4        800     15   29       0        1         1                     0   
+   college  
+0        0  
+1        0  
+2        0  
+3        1  
+4        0  
+[[ 0.49362588  0.92844966  3.05981865  1.97714211 -1.30384048  2.39791576
+  -0.79772404 -0.86135677]
+ [-3.56269116 -1.70427745  0.53336288 -0.50578054  0.76696499 -0.41702883
+  -0.79772404 -0.86135677]
+ [ 0.49362588  0.92844966  1.88080596  1.97714211  0.76696499 -0.41702883
+   1.25356634 -0.86135677]
+ [ 0.49362588  0.92844966 -0.98251057 -0.50578054  0.76696499 -0.41702883
+  -0.79772404  1.16095912]
+ [-0.66532184 -0.78854628 -0.47721942 -0.50578054  0.76696499  2.39791576
+  -0.79772404 -0.86135677]]
+['PAIDOFF' 'PAIDOFF' 'PAIDOFF' 'PAIDOFF' 'PAIDOFF']
+Train set: (43, 8) (43,)
+Validation set: (11, 8) (11,)
+[0.72727273 0.63636364 0.81818182 0.63636364 0.81818182 0.54545455
+ 0.81818182 0.72727273 0.81818182]
+The best accuracy was 0.8181818181818182 with k= 3
+KNeighborsClassifier(n_neighbors=7)
+Train set Accuracy:  0.8604651162790697
+Validation set Accuracy:  0.8181818181818182
+              precision    recall  f1-score   support
+  COLLECTION       0.73      0.85      0.79        13
+     PAIDOFF       0.93      0.87      0.90        30
+    accuracy                           0.86        43
+   macro avg       0.83      0.86      0.84        43
+weighted avg       0.87      0.86      0.86        43
+Train set Accuracy:  0.8372093023255814
+Validation set Accuracy:  0.45454545454545453
+              precision    recall  f1-score   support
+  COLLECTION       0.71      0.77      0.74        13
+     PAIDOFF       0.90      0.87      0.88        30
+    accuracy                           0.84        43
+   macro avg       0.81      0.82      0.81        43
+weighted avg       0.84      0.84      0.84        43
+SVC(random_state=0)
+Train set Accuracy:  0.8604651162790697
+Validation set Accuracy:  0.9090909090909091
+              precision    recall  f1-score   support
+  COLLECTION       1.00      0.54      0.70        13
+     PAIDOFF       0.83      1.00      0.91        30
+    accuracy                           0.86        43
+   macro avg       0.92      0.77      0.80        43
+weighted avg       0.88      0.86      0.85        43
+LogisticRegression(C=0.1, random_state=0, solver='liblinear')
+LR Train set Accuracy:  0.7441860465116279
+LR Validation set Accuracy:  0.9090909090909091
+              precision    recall  f1-score   support
+  COLLECTION       0.57      0.62      0.59        13
+     PAIDOFF       0.83      0.80      0.81        30
+    accuracy                           0.74        43
+   macro avg       0.70      0.71      0.70        43
+weighted avg       0.75      0.74      0.75        43
+{'C': 0.1}
+0.6527777777777778
+[0.10576404 0.14069496 0.3250819  0.09003344 0.15609345 0.02366734
+ 0.09595718 0.06270769]
+Train set Accuracy:  0.9534883720930233
+Validation set Accuracy:  0.9090909090909091
+              precision    recall  f1-score   support
+  COLLECTION       0.92      0.92      0.92        13
+     PAIDOFF       0.97      0.97      0.97        30
+    accuracy                           0.95        43
+   macro avg       0.94      0.94      0.94        43
+weighted avg       0.95      0.95      0.95        43
+Train set Accuracy:  0.9767441860465116
+Validation set Accuracy:  0.6363636363636364
+              precision    recall  f1-score   support
+  COLLECTION       0.93      1.00      0.96        13
+     PAIDOFF       1.00      0.97      0.98        30
+    accuracy                           0.98        43
+   macro avg       0.96      0.98      0.97        43
+weighted avg       0.98      0.98      0.98        43
+MLPClassifier(hidden_layer_sizes=(4, 1), random_state=0, solver='lbfgs')
+Train set Accuracy:  0.9534883720930233
+Validation set Accuracy:  1.0
+              precision    recall  f1-score   support
+  COLLECTION       1.00      0.85      0.92        13
+     PAIDOFF       0.94      1.00      0.97        30
+    accuracy                           0.95        43
+   macro avg       0.97      0.92      0.94        43
+weighted avg       0.96      0.95      0.95        43
+KNN Jaccard Score: 0.813953488372093
+KNN F1 Score: 0.8548907882241216
+Decision Tree Jaccard Score: 0.7045454545454546
+Decision Tree F1 Score: 0.769472502805836
+SVM Jaccard Score: 0.851063829787234
+SVM F1 Score: 0.8539804171988081
+Logistic Regression Jaccard Score: 0.7391304347826086
+Logistic Regression F1 Score: 0.7777777777777778
+Logistic Regression Log Loss: 0.5278027506152023
+Random Forest Jaccard Score: 0.9285714285714286
+Random Forest F1 Score: 0.943758573388203
+Gradient Boosting Jaccard Score: 0.8780487804878049
+Gradient Boosting F1 Score: 0.9100839423420068
+Multi Layer Perceptron Jaccard Score: 0.9523809523809523
+Multi Layer Perceptron F1 Score: 0.96199013272184
+Multi Layer Perceptron Log Loss: 0.0691720327064592
+ROC AUC Score: 0.9946428571428572
